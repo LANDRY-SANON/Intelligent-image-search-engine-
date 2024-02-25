@@ -1,0 +1,14 @@
+<form id="searchForm" action="/perform-feature-action" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="queryImage">Select Query Image:</label>
+        <input type="file" id="queryImage" name="queryImage" accept="image/*" required>
+    </div>
+    <div class="form-group">
+        <label for="databaseFolder">Select Database Folder:</label>
+        <input type="file" id="databaseFolder" name="databaseFolder" directory webkitdirectory onchange="getFolderPath(this)" required>
+    </div>
+    <input type="hidden" id="databaseFolderPath" name="databaseFolderPath">
+    <div class="form-group">
+        <button type="button" onclick="submitForm()" class="btn btn-primary">Search</button>
+    </div>
+</form>
