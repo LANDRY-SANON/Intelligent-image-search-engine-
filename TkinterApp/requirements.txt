@@ -1,0 +1,12 @@
+opencv-python==4.9.0.80
+dlib==19.24.2
+easyocr==1.7.1
+ultralytics==8.1.20
+imutils==0.5.4
+matplotlib==3.8.3
+numpy
+pandas
+Pillow==10.2.0
+scikit_learn==1.4.1.post1
+scipy==1.12.0
+scikit-image
