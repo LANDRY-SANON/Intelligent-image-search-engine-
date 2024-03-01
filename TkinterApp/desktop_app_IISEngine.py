@@ -194,7 +194,7 @@ def on_find_similar_images_PTM_clicked():
 def on_detect_objects_using_FasterRCNN_clicked():
     database_dir_detfastrcnn = database_dir_widget_detfastrcnn.get()
     label_detfastrcnn = label_widget_detfastrcnn.get()
-    if os.path.isfile(label_detfastrcnn) and os.path.isdir(database_dir_detfastrcnn) :
+    if os.path.isdir(database_dir_detfastrcnn) :
         messagebox.showinfo("Success","wait, this may take several minutes.")
         Image_list , Image_name_list = on_button_click_detect_objects_using_FasterRCNN(database_dir_detfastrcnn, label_detfastrcnn)
         if not Image_list :
@@ -380,7 +380,7 @@ def AddFormPattern_Label_Folder(name,text,command) :
     label_widget_2_label = tk.Label(form_frame, text="Label:")
     label_widget_2_label.grid(row=1, column=0, padx=5, pady=5, sticky="e")
     label_options = classes  
-    label_widget_2 = ttk.Combobox(form_frame, values=label_options, width=47)
+    label_widget_2 = ttk.Combobox(form_frame, values=label_options, width=47, state="readonly")
     label_widget_2.grid(row=1, column=1, padx=5, pady=5)
     label_widget_2.current(0)
     
