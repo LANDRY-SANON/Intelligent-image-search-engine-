@@ -16,5 +16,6 @@ Functionalities reflecting the idea of an intelligent image search system based 
 You'll find :
 * Intelligent image search engine.ipynb : The main notebook containing details of our work
 * Notebook Interface.ipynb : A notebook with a small integrated interface for easy handling of the various functions
+* "tkinter app" folder containing the code for our tkinter application, to provide a better desktop interface for manipulating our functions
 
 If you need the drive containing the weights of our models, as well as other files to make these notebooks work properly, please don't hesitate to contact us,
