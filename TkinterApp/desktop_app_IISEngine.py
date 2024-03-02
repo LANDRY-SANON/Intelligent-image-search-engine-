@@ -251,7 +251,8 @@ def on_detect_images_using_fragment_clicked():
 def on_search_images_containing_text_clicked():
     query_text_ocr = query_text_widget_ocr.get()
     database_dir_ocr = database_dir_widget_ocr.get()
-    if os.path.isfile(query_text_ocr) and os.path.isdir(database_dir_ocr) : 
+    print(query_text_ocr)
+    if query_text_ocr and os.path.isdir(database_dir_ocr) : 
         messagebox.showinfo("Success","wait, this may take several minutes.")
         Image_list = search_images_containing_text(query_text_ocr, database_dir_ocr)
         if not Image_list :
